@@ -14,17 +14,24 @@ Here is an image below showing what the game will look like when played on the t
 
 ## Pre-installation requirements:
 C compiler (e.g gnu)
+
 Unix-based OS (Ncurses provides capability for unix based terminals)
 
 ## Installation:
+
+Clone the repository from Github
 
 ```bash
 caidol@fedora ~ sudo git clone "https://github.com/caidol/Ncurses-Snake-C"
 ``` 
 
+Change directory into repo folder location
+
 ```bash
 caidol@fedora ~ cd Ncurses-Snake-C
 ``` 
+
+Compile the C code, ensuring that the -lncurses linker flag is appended to the usual compilation command
 
 ```bash
 caidol@fedora ~ gcc -o snake snake.c -lncurses # Make sure that you add the linker flag for ncurses
